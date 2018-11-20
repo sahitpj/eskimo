@@ -5,8 +5,8 @@ var express = require('express');
 var serverapp = express();
 var server = require('http').createServer(serverapp);
 serverapp.use(express.static(__dirname + '/node_modules'));
-serverapp.get('/', function (req, res, next) {
-    console.log(req);
+serverapp.post('/', function (req, res, next) {
+    console.log(req.headers.data);
     res.sendFile(__dirname + '/index.html');
 });
 server.listen(8000, function () {
