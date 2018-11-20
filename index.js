@@ -6,10 +6,10 @@ const BrowserWindow = electron_1.remote.BrowserWindow;
 const dialog = electron_1.remote.dialog;
 function hello() {
     var options = {
-        title: 'ダイアログのタイトル',
+        title: 'Hello world',
         type: 'info',
         buttons: ['OK', 'Cancel'],
-        message: 'メッセージ',
+        message: 'Hi',
         detail: 'hello'
     };
     var win = BrowserWindow.getFocusedWindow();

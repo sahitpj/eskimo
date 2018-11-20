@@ -6,10 +6,10 @@ const dialog = remote.dialog;
 
 function hello(){
 	var options: Electron.MessageBoxOptions = {
-		title: 'ダイアログのタイトル',
+		title: 'Hello world',
 		type: 'info',
 		buttons: ['OK', 'Cancel'],
-		message: 'メッセージ',
+		message: 'Hi',
 		detail: 'hello'
 	};
 	var win = BrowserWindow.getFocusedWindow();
